@@ -567,7 +567,7 @@ class MessageCenter:
         return box
 
     def get_boxes(self):
-        return self._owner2box.values()
+        return list(self._owner2box.values())
 
     def close(self):
         if self.__closed:
